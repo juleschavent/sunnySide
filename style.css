@@ -1,0 +1,430 @@
+/*||||||||||||||||||||||||||||||||||||RESET||||||||||||||||||||||||||||||||||||*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/*||||||||||||||||||||||||||||||||||||GENERAL||||||||||||||||||||||||||||||||||||*/
+body {
+    background-color: hsl(307, 100%, 98%);
+}
+
+/*                  HEADER                   */
+header {
+    max-width: 144rem;
+    min-height: 60rem;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.nav__links {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+
+/* BURGER DISPLAY */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*||||||||||||||||||||||||||||||||||||BURGER DISPLAY||||||||||||||||||||||||||||||||||||*/
+
+.burger__links {
+    background-color: white;
+    list-style: none;
+    border-radius: 2rem 0 2rem 2rem;
+    box-shadow: 0 .5rem 2rem rgb(172, 172, 172);
+    padding: 3rem;
+    margin: 5rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+.burger__links li:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.burger__links li:last-child {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.burger__link {
+    color: hsl(232, 10%, 55%);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.burger__link--contact {
+    background-color: hsl(51, 100%, 49%);
+    color: black;
+    font-family: 'Fraunces', serif;
+    padding: 1.5rem 3rem;
+    border-radius: 10rem;
+}
+
+.header__placeHolder {
+    width: 100%;
+    height: 55rem;
+    position: absolute;
+    top: 7rem;
+}
+
+/*||||||||||||||||||||||||||||||||||||HERO||||||||||||||||||||||||||||||||||||*/
+.hero__title {
+    font-size: 4rem;
+    font-family: 'Fraunces', serif;
+    color: white;
+    letter-spacing: .7rem;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.hero__arrow {
+    transition: .2s ease;
+}
+
+.hero__arrow:hover {
+    transform: scale(1.3);
+    transform-origin: top;
+}
+
+/*||||||||||||||||||||||||||||||||||||MAIN||||||||||||||||||||||||||||||||||||*/
+/* MAIN ARTICLE */
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.main__img {
+    height: 100%;
+    width: 100%;
+}
+
+.main__copy {
+    padding: 7rem 3rem;
+    color: hsl(212, 27%, 19%);
+}
+
+.main__copy__title {
+    font-size: 3rem;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 3rem;
+}
+
+.main__copy__text {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    color: hsl(223, 3%, 45%);
+    line-height: 1.5;
+}
+
+.main__copy__btn {
+    font-size: 1.7rem;
+    font-family: 'Fraunces', serif;
+    background: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.main__copy__btn::after {
+    content: '';
+    width: 100%;
+    height: 1rem;
+    border-radius: 10rem;
+    background: rgba(255, 239, 188, 0.719);
+    position: absolute;
+    bottom: -.3rem;
+    left: 0;
+    z-index: -1;
+    transition: .1s ease;
+}
+
+.main__copy__btn:hover::after {
+    background: rgba(255, 220, 107, 0.719);
+    transform: scale(1.1);
+}
+
+.main__copy__btn--second::after {
+    background: rgba(255, 197, 221, 0.774);
+}
+
+.main__copy__btn--second:hover::after {
+    background: rgba(255, 150, 194, 0.774);
+}
+
+/* MODIFIER FOR ARTICLE WITH BG IMG */
+main article:nth-of-type(3) {
+    background: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+main article:nth-of-type(4) {
+    background: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.main__copy--bgImg {
+    padding-top: 35rem;
+    padding-bottom: 2rem;
+}
+
+.main__copy__text--first {
+    color: hsl(167, 40%, 24%);
+}
+
+.main__copy__text--second {
+    color: hsl(198, 62%, 26%);
+}
+
+/* MAIN TESTIMONIALS */
+.main__testi {
+    padding: 5rem 3rem;
+}
+
+.main__testi__title {
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-family: 'Fraunces',
+        serif;
+    color: rgb(128, 128, 128);
+    letter-spacing: .5rem;
+    margin-bottom: 4rem;
+}
+
+.main__testi__copy {
+    margin-bottom: 8rem;
+}
+
+.main__testi__avatar {
+    width: 8rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.main__testi__text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: rgb(20, 20, 20);
+}
+
+.main__testi__name {
+    font-size: 1.8rem;
+    font-family: 'Fraunces',
+        serif;
+    color: rgb(20, 20, 20);
+    margin-bottom: .5rem;
+}
+
+.main__testi__job {
+    font-size: 1.2rem;
+    color: rgb(129, 129, 129);
+}
+
+/* MAIN CAROUSEL */
+.main__carousel__desk {
+    display: none;
+}
+
+.main__carousel__mob {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main__carousel__mob__img {
+    width: 100%;
+}
+
+
+/*||||||||||||||||||||||||||||||||||||FOOTER||||||||||||||||||||||||||||||||||||*/
+footer {
+    background-color: hsl(168, 57%, 66%);
+    text-align: center;
+    padding: 3rem 0;
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    margin-bottom: 3rem;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+}
+
+.footer__link {
+    padding: 0 2rem;
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+    font-size: 2rem;
+    transition: .1s ease;
+}
+
+.footer__link:hover {
+    color: white;
+}
+
+.footer__socials {
+    max-width: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    transition: .1s ease;
+    cursor: pointer;
+}
+
+.footer__social:hover {
+    transform: scale(1.2);
+}
+
+/* BREAKPOINTS */
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media screen and (min-width: 650px) {
+    .burger {
+        display: none;
+    }
+
+    .header__placeHolder {
+        display: none;
+    }
+
+    /*||||||||||||||||||||||||||||||||||||HEADER||||||||||||||||||||||||||||||||||||*/
+    /* NAV */
+    .nav__links {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .nav__link {
+        text-decoration: none;
+        padding: 0 3rem;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    .nav__link:hover {
+        background-color: rgb(145, 202, 255);
+        padding: 1.5rem 3rem;
+        border-radius: 10rem;
+        color: white;
+    }
+
+    .nav__link--contact {
+        background-color: rgb(245, 251, 255);
+        padding: 1.5rem 3rem;
+        border-radius: 10rem;
+        color: black;
+        font-family: 'Fraunces', serif;
+    }
+}
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+@media screen and (min-width: 1265px) {
+
+    /*||||||||||||||||||||||||||||||||||||MAIN||||||||||||||||||||||||||||||||||||*/
+    main {
+        max-width: 144rem;
+    }
+
+    /* MAIN ARTICLE */
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 600px);
+        margin-bottom: 5rem;
+    }
+
+    .main__copy--desk {
+        grid-row: 1;
+    }
+
+    .main__img--desk {
+        grid-column: 2;
+    }
+
+    .main__copy {
+        margin: auto;
+        padding: 0 15rem;
+        text-align: left;
+    }
+
+    .main__copy--bgImg {
+        padding-top: 35rem;
+        padding-bottom: 2rem;
+        margin: 0;
+    }
+
+    /* MAIN TESTI */
+    .main__testi--desk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__testi__copy {
+        padding: 0 8rem;
+    }
+
+    /* MAIN CAROUSEL */
+    .main__carousel__mob {
+        display: none;
+    }
+
+    .main__carousel__desk {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .main__carousel__desk__img {
+        max-width: 100%;
+        grid-row: 1;
+    }
+}

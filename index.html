@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <!-- LOGO + ICON BURGER -->
+      <img class="nav__logo" src="./images/logo.svg" alt="logo sunnyside">
+      <img id="burger" class="burger" src="./images/icon-hamburger.svg" alt="icon menu burger">
+
+      <!-- LINKS BURGER -->
+      <ul class="burger__links hide">
+        <li><a class="burger__link" href="#">About</a></li>
+        <li><a class="burger__link" href="#">Services</a></li>
+        <li><a class="burger__link" href="#">Projects</a></li>
+        <li><a class="burger__link burger__link--contact" href="#">Contact</a></li>
+      </ul>
+
+      <!-- LINKS DESKTOP -->
+      <ul class="nav__links hide">
+        <li><a class="nav__link" href="#">About</a></li>
+        <li><a class="nav__link" href="#">Services</a></li>
+        <li><a class="nav__link" href="#">Projects</a></li>
+        <li><a class="nav__link nav__link--contact" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO TITLE & ARROW -->
+    <h1 class="hero__title">WE ARE CREATIVES</h1>
+    <div class="header__placeHolder"></div>
+    <a href="#main"><img class="hero__arrow" src="./images/icon-arrow-down.svg" alt="arrow pointing down"></a>
+
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+
+    <!-- MAIN ARTICLE -->
+    <section class="main__container">
+      <img class="main__img main__img--desk" src="./images/desktop/image-transform.jpg" alt="Oeuf">
+      <article class="main__copy main__copy--desk">
+        <h2 class="main__copy__title">Transform your brand</h2>
+        <p class="main__copy__text">We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <button class="main__copy__btn main__copy__btn--first">LEARN MORE</button>
+      </article>
+
+      <img class="main__img" src="./images/desktop/image-stand-out.jpg" alt="Verre à cocktail">
+      <article class="main__copy">
+        <h2 class="main__copy__title">Stand out to the right audience</h2>
+        <p class="main__copy__text">Using a collaborative formula of designers, researchers, photographers,
+          videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <button class="main__copy__btn main__copy__btn--second">LEARN MORE</button>
+      </article>
+
+      <article class="main__copy main__copy--bgImg">
+        <h2 class="main__copy__title">Graphic Design</h2>
+        <p class="main__copy__text main__copy__text--first">Great design makes you memorable. We deliver artwork that
+          underscores your brand
+          message and captures potential clients’ attention.</p>
+      </article>
+
+      <article class="main__copy main__copy--bgImg">
+        <h2 class="main__copy__title">Photography</h2>
+        <p class="main__copy__text main__copy__text--second">Increase your credibility by getting the most stunning,
+          high-quality photos that improve your business image.</p>
+      </article>
+    </section>
+
+    <!-- MAIN TESTIMONIAL -->
+    <section class="main__testi">
+      <h3 class="main__testi__title">CLIENT TESTIMONIALS</h3>
+
+      <div class="main__testi--desk">
+        <div class="main__testi__copy">
+          <img class="main__testi__avatar" src="./images/image-emily.jpg" alt="avatar Emily">
+          <p class="main__testi__text">We put our trust in Sunnyside and they delivered, making sure our needs were met
+            and deadlines were always
+            hit.</p>
+          <h4 class="main__testi__name">Emily R.</h4>
+          <h5 class="main__testi__job">Marketing Director</h5>
+        </div>
+
+        <div class="main__testi__copy">
+          <img class="main__testi__avatar" src="./images/image-thomas.jpg" alt="avatar Thomas">
+          <p class="main__testi__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
+            made
+            it a satisfying and enjoyable
+            experience.</p>
+          <h4 class="main__testi__name">Thomas S.</h4>
+          <h5 class="main__testi__job">Chief Operating Officer</h5>
+        </div>
+
+        <div class="main__testi__copy">
+          <img class="main__testi__avatar" src="./images/image-jennie.jpg" alt="avatar Jennie">
+          <p class="main__testi__text">Incredible end result! Our sales increased over 400% when we worked with
+            Sunnyside.
+            Highly recommended!</p>
+          <h4 class="main__testi__name">Jennie F.</h4>
+          <h5 class="main__testi__job">Business Owner</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CAROUSEL MOBILE-->
+    <section class="main__carousel__mob">
+      <img class="main__carousel__mob__img" src="./images/mobile/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+      <img class="main__carousel__mob__img" src="./images/mobile/image-gallery-orange.jpg" alt="Oranges">
+      <img class="main__carousel__mob__img" src="./images/mobile/image-gallery-cone.jpg" alt="Ice Cream Cone">
+      <img class="main__carousel__mob__img" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar Cubes">
+    </section>
+
+    <!-- MAIN CAROUSEL DESKTOP -->
+    <section class="main__carousel__desk">
+      <img class="main__carousel__desk__img" src="./images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+      <img class="main__carousel__desk__img" src="./images/desktop/image-gallery-orange.jpg" alt="Oranges">
+      <img class="main__carousel__desk__img" src="./images/desktop/image-gallery-cone.jpg" alt="Ice Cream Cone">
+      <img class="main__carousel__desk__img" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <img class="footer__logo" src="./images/logo.svg" alt="logo sunnyside">
+    <ul class="footer__links">
+      <li><a class="footer__link" href="#">About</a></li>
+      <li><a class="footer__link" href="#">Services</a></li>
+      <li><a class="footer__link" href="#">Projects</a></li>
+    </ul>
+    <div class="footer__socials">
+      <img class="footer__social" src="./images/icon-facebook.svg" alt="icon facebook">
+      <img class="footer__social" src="./images/icon-instagram.svg" alt="icon instagram">
+      <img class="footer__social" src="./images/icon-twitter.svg" alt="icon twitter">
+      <img class="footer__social" src="./images/icon-pinterest.svg" alt="icon pinterest">
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
